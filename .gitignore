@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+# relatórios reais (dados de clientes) e resultados
+dados/
+dataset/
+*_resultado.json
+iniciar/pdfs/
+iniciar/resultado.json

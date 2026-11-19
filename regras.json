@@ -1,0 +1,44 @@
+{
+  "_comentario": "Regras de validação do CegoAi. Em 'fotos_esperadas', 'a|b' aceita qualquer uma das categorias. 'nivel' = FALTA (reprova) ou AVISO.",
+  "POS": {
+    "min_fotos_reais": 2,
+    "fotos_esperadas": [
+      "tpa",
+      "talao",
+      "balanca|scanner",
+      "cablagem|base_balanca"
+    ],
+    "fotos_condicionais": [
+      {
+        "categoria": "boba",
+        "campo": "Loja tem Câmara BOBA?",
+        "valor": "Sim"
+      }
+    ],
+    "nivel_fotos_esperadas": "FALTA",
+    "arroz_na_balanca": true,
+    "nivel_arroz": "FALTA"
+  },
+  "SCO": {
+    "min_fotos_reais": 2,
+    "fotos_esperadas": [
+      "tpa",
+      "talao",
+      "balanca|scanner"
+    ],
+    "fotos_condicionais": [],
+    "nivel_fotos_esperadas": "FALTA",
+    "arroz_na_balanca": true,
+    "nivel_arroz": "FALTA"
+  },
+  "AREA": {
+    "min_fotos_por_rotulo": 1
+  },
+  "geral": {
+    "nok_reprova": false,
+    "sem_resposta_reprova": true,
+    "verificar_contagem_pos_sco": true,
+    "limiar_arroz": 0.5,
+    "prob_presenca": 0.2
+  }
+}
